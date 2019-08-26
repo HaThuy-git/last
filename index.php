@@ -64,7 +64,7 @@
 
 <div class="menu">
 	<ul>
-			<li><a href="https://babyhop.herokuapp.com/last/admin.php" target="_bank">PRODUCT</a>
+			<li><a href="https://babyhop.herokuapp.com/admin.php" target="_bank">PRODUCT</a>
 			<li><a href="">WOODEN TOYS</a>
 			<li><a href="">LEGO TOYS</a>
 			<li><a href="">ABOUT US</a></li>
