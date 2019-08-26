@@ -1,0 +1,72 @@
+.img
+{
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 300px;
+  background-size: cover;
+  background-position: left;
+}
+.img:hover
+{
+  border: 1px solid black;
+}
+.img img
+{
+  width: 100%;
+  height: auto
+}
+.desc
+{
+  padding: 10px;
+  text-align: center;
+}
+
+/*phần menu*/
+.menu
+	{
+		height: 60px;
+		background-color: #131212;
+		line-height: 60px; 
+
+	}
+	.menu li 
+	{   
+        background-position: bottom;
+        float: left;
+       text-align: center;
+       position: relative;
+	}
+	.menu ul 
+	{ 
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		position: relative;
+
+	}
+	.menu a 
+	{
+		padding: 20px;
+		/*display: block; *//*khi chạm vào khối mình muốn chọn nó đã hiện màu, chứ kp chọn hẳn vào
+		 chữ đấy n mới hiện*/
+        line-height: 50px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #FFFFFF;     
+	}
+	.menu a:hover 
+	{
+		background-color: #E08787;
+	}	
+
+.menu ul li > .sub-menu 
+{
+      display: none;
+      
+}
+.menu ul li:hover .sub-menu
+{
+	display: block;
+	position: absolute;
+}
