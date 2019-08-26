@@ -4,21 +4,7 @@ $servername = "localhost";
 $username = "username";
 $password = "password";
 
-try {
-    $conn = new PDO("mysql:host=$servername", $username, $password);
-    // set the PDO error mode to exception
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sql = "CREATE DATABASE myDBPDO";
-    // use exec() because no results are returned
-    $conn->exec($sql);
-    echo "Database created successfully<br>";
-    }
-catch(PDOException $e)
-    {
-    echo $sql . "<br>" . $e->getMessage();
-    }
-
-$conn = null;
+$qr = mysql_select_db("select * from admin") or die ("Error");
 
 ?>
 <h1>WELCOME ADMIN- USER LIST</h1>
@@ -30,3 +16,15 @@ $conn = null;
 		<th>Email</th>
 	</tr>
 </table>
+<?php 
+$i =1;
+while ($rs = mysql_fetch_array($qr)) {
+	echo "<tr>";
+	echo "<td>".$i."</td>";
+	echo "<td>".$rs["username"]."</td>";
+	echo "<td>***************</td>";
+	echo "<td>".$rs["email"]."</td>";
+	echo "</tr>";
+}
+}
+?>
