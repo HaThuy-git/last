@@ -13,7 +13,7 @@
         <th>Password</th>
         <th>Email</th>
     </tr>
-    <?php include './Adminlist.php'?>
+    <?php include 'Adminlist.php';?>
 </table>
 </body>
 </html>
