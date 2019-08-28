@@ -1,6 +1,6 @@
 <?php
-         include 'connect.php';
-    $sql = "SELECT * FROM admin";
+    include 'connect.php';
+    $sql = "SELECT * FROM product";
     $result = pg_query($connection,$sql);
     if (pg_num_rows($result) > 0) {
     // output data of each row
@@ -9,13 +9,24 @@
     ?>
     <div action="Adminlist.php">
         <tr>
-                    <td class="info"><?php echo $row['id']?></td> 
-                    <td class="info"><?php echo $row['username']?></td> 
-                    <td class="info"><?php echo $row['password']?></td> 
-                    <td class="info"><?php echo $row['email']?></td> 
-                   
-                </tr>
-    </div>
-                
-<?php}}
+            
+            <td>
+                <span><?php echo $row["id"]?></span>
+            </td>
+
+            <td>
+                <span><?php echo $row["username"]?></span>
+            </td>
+
+            <td>
+                <span> <?php echo $row["password"]?>$</span>
+            </td>
+
+             <td>
+                <span><?php echo $row["email"]?></span>
+            </td>
+            
+        <tr/>
+    </div>  
+    <?php }} 
 ?>
