@@ -15,7 +15,7 @@
             </td>
 
             <td>
-                <span><?php echo $row["username"]?></span>
+                <span><?php echo $row[1]["username"]?></span>
             </td>
 
             <td>
