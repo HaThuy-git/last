@@ -19,7 +19,7 @@
             </td>
 
             <td>
-                <span> <?php echo $row["password"]?></span>
+                <span><?php echo $row["password"]?></span>
             </td>
 
              <td>
@@ -30,3 +30,4 @@
     </div>  
     <?php }} 
 ?>
+
