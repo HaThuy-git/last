@@ -1,4 +1,3 @@
-
 <?php
 $connection = pg_connect("host=ec2-23-23-182-18.compute-1.amazonaws.com port=5432 
     dbname=d4bvd2cc5jlt96 user=iloapxkhzeuvec 
