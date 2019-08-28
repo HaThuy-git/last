@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>TrangChu</title>
+	<title>BabyHop</title>
 	<link rel="stylesheet" href="img.css">
 </head>
 <body>
@@ -51,7 +51,7 @@
     <ul>
 		<li><a> <strong> Hotline:</strong> 0967279669 | <strong> Email: </strong> babyhopvn@gmail.com</a></li>
 
-		<li><a href="" target="_bank">Login</a></li>
+		<li><a href="https://babyhop.herokuapp.com/login.php" target="_bank">Login</a></li>
 
 		<li><a href="" target="_bank">Sign up</a>
 
