@@ -1,6 +1,6 @@
 <?php
     include 'connect.php';
-    $sql = "SELECT * FROM product";
+    $sql = "SELECT * FROM admin";
     $result = pg_query($connection,$sql);
     if (pg_num_rows($result) > 0) {
     // output data of each row
