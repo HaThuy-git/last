@@ -1,13 +1,14 @@
-<?php
-    include 'connect.php';
-    $sql = "SELECT * FROM admin";
-    $result = pg_query($connection,$sql);
-    if (pg_num_rows($result) > 0) {
-    // output data of each row
-    while($row = pg_fetch_assoc($result)) {
-    
-    ?>
+
     <div action="Adminlist.php">
+        <?php
+            require_once 'connect.php';
+            $sql = "SELECT * FROM admin"; 
+        $stmt = $pdo->prepare($sql); 
+        $stmt->setFetchMode(PDO::FETCH_ASSOC); 
+        $stmt->execute();
+        $resultSet = $stmt->fetchAll();
+            foreach ($resultSet as $row) {
+            ?>
         <tr>
             
             <td>
@@ -15,7 +16,7 @@
             </td>
 
             <td>
-                <span><?php echo $row[1]?></span>
+                <span><?php echo $row["username"]?></span>
             </td>
 
             <td>
