@@ -7,12 +7,15 @@
     while($row = pg_fetch_assoc($result)) {
     
     ?>
-                <tr>
+    <div action="Adminlist.php">
+        <tr>
                     <td class="info"><?php echo $row['id']?></td> 
                     <td class="info"><?php echo $row['username']?></td> 
                     <td class="info"><?php echo $row['password']?></td> 
                     <td class="info"><?php echo $row['email']?></td> 
                    
                 </tr>
-            <?php}}
-            ?>
+    </div>
+                
+<?php}}
+?>
