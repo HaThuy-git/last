@@ -1,9 +1,12 @@
 <?php
-            require_once 'connect.php';
-            $sql = "SELECT * FROM admin";
-            $stmt = $pdo->prepare($sql);
-            foreach ($pdo->pg_query($connection,$sql) as $row) {
-?>
+         include 'connect.php';
+    $sql = "SELECT * FROM admin";
+    $result = pg_query($connection,$sql);
+    if (pg_num_rows($result) > 0) {
+    // output data of each row
+    while($row = pg_fetch_assoc($result)) {
+    
+    ?>
                 <tr>
                     <td class="info"><?php echo $row['id']?></td> 
                     <td class="info"><?php echo $row['username']?></td> 
