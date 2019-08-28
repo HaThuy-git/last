@@ -1,7 +1,7 @@
 
     <div action="Adminlist.php">
         <?php
-            require_once 'connect.php';
+            require_once './dbname.php';
             $sql = "SELECT * FROM admin"; 
         $stmt = $pdo->prepare($sql); 
         $stmt->setFetchMode(PDO::FETCH_ASSOC); 
