@@ -27,14 +27,4 @@
     <?php }} 
 ?>
 
-<?php 
-$rows = pg_query($sql);
-
-if(count($rows)>0)
-    include("index.php");
-else
-    echo "<h1>Username or Password incorrect</h1>";
-}
-else
-    echo "<h1>Your account has no system</h1>";
-?>
+ 
