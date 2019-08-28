@@ -25,6 +25,9 @@
              <td>
                 <span><?php echo $row["email"]?></span>
             </td>
+            <td>
+                <a href="">Add</a> | <a href="">Delete</a>
+            </td>
             
         <tr/>
     </div>  
