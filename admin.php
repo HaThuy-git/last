@@ -1,4 +1,19 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>WELCOME ADMIN- USER LIST</h1>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>User name</th>
+        <th>Password</th>
+        <th>Email</th>
+    </tr>
+    <?php
             require_once 'connect.php';
             $sql = "SELECT * FROM admin";
             $stmt = $pdo->prepare($sql);
@@ -10,13 +25,9 @@
                     <td class="info"><?php echo $row['password']?></td> 
                     <td class="info"><?php echo $row['email']?></td> 
                    
-<h1>WELCOME ADMIN- USER LIST</h1>
-<table border="1">
-    <tr>
-        <th>ID</th>
-        <th>User name</th>
-        <th>Password</th>
-        <th>Email</th>
-    </tr>
+                </tr>
+            }}
+            ?>
 </table>
-                   
+</body>
+</html>
