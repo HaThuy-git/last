@@ -26,7 +26,7 @@
                 <span><?php echo $row["email"]?></span>
             </td>
             <td>
-                <a href="">Add</a> | <a href="">Delete</a>
+                <a href="https://babyhop.herokuapp.com/add_user.php">Add</a> | <a href="">Delete</a>
             </td>
             
         <tr/>
