@@ -3,8 +3,8 @@
             require_once './database.php';
             $sql = "SELECT * FROM admin";
             $stmt = $pdo->prepare($sql);
-            foreach ($pdo->query($sql) as $row) {
-            ?>
+            foreach ($pdo->pg_query($sql) as $row) {
+?>
                 <tr>
                     <td class="info"><?php echo $row['id']?></td> 
                     <td class="info"><?php echo $row['username']?></td> 
