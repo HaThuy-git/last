@@ -1,9 +1,8 @@
-
 <?php
-            require_once './database.php';
+            require_once 'connect.php';
             $sql = "SELECT * FROM admin";
             $stmt = $pdo->prepare($sql);
-            foreach ($pdo->pg_query($sql) as $row) {
+            foreach ($pdo->pg_query($connection,$sql) as $row) {
 ?>
                 <tr>
                     <td class="info"><?php echo $row['id']?></td> 
