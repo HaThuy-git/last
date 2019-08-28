@@ -15,7 +15,7 @@ else
 include("index.php");
 
     ?>
-    <div action="processlogin.php.php">
+    <div action="processlogin.php">
         <tr>
             <td>
                 <span><?php echo $row["username"]?></span>
