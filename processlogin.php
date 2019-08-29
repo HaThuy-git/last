@@ -1,5 +1,8 @@
 <?php 
 require_once './connect.php';  
+$sql = "SELECT * FROM account";
+    $result = pg_query($connection,$sql);
+    if (pg_num_rows($result) > 0) {
 if(isset($_POST["username"]) && isset($_POST["password"]))
 {
     $user = $_POST["username"];
