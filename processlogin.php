@@ -6,26 +6,9 @@
     // output data of each row
     while($row = pg_fetch_assoc($result)) {
 
- if (isset($_POST['submit'])) {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    $email = $_POST['email'];
-    foreach ($resultSet as $row) {
-      if ($username == $row['accountusername'] && $password ==  $row['accountpassword'] && $email == $row['accountemail'])
-      {
-        header("Location: login.php?username={$username}");
-      }else{
-        echo '
-          <script>
-            alert("WRONG! Wanna try again?");
-          </script>
-        ';
-      }
-    }
-  }
-?>
-
-
+    ?>
+ include 'index.php' 
+    <?php }} 
 ?>
 
  
