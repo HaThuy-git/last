@@ -6,25 +6,20 @@
     // output data of each row
     while($row = pg_fetch_assoc($result)) {
 
-    ?>
-    <div action="processlogin.php">
-        <tr>
-            <td>
-                <span><?php echo $row["username"]?></span>
-            </td>
+$sql = "select * from account where username ='" .$user 
+. "' and password='" . $pass . "'";
 
-            <td>
-                <span><?php echo $row["email"]?></span>
-            </td>
+$rows = pg_query($sql);
 
-             <td>
-                <span><?php echo $row["password"]?></span>
-            </td>
-            
-        <tr/>
+if(count($rows)>0)
+include("index.html");
+else
+    echo "<h1>Username or Password incorrect</h1>";
+}
+else
+    echo "<h1>Your account has no system</h1>";
 
-    </div>  
-    <?php }} 
+
 ?>
 
  
