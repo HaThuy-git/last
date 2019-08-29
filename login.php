@@ -8,7 +8,7 @@
 <a align="center">
 	<form action="processlogin.php" method="Post"> 
 	User name: <input type="text" name="user"> <br> <br>
-	Email: <input type="text" name="email"> <br> <br>
+	
 	Password: <input type="password" name="pass"><br> <br>
 	<input type="Submit" value="Login">
 	<input type="Reset" value="Reset">
