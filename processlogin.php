@@ -6,18 +6,24 @@
     // output data of each row
     while($row = pg_fetch_assoc($result)) {
 
-$sql = "select * from account where username ='" .$user 
-. "' and password='" . $pass . "'";
-
-$rows = pg_query($sql);
-
-if(count($rows)>0)
-include("index.html");
-else
-    echo "<h1>Username or Password incorrect</h1>";
-}
-else
-    echo "<h1>Your account has no system</h1>";
+ if (isset($_POST['submit'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $email = $_POST['email'];
+    foreach ($resultSet as $row) {
+      if ($username == $row['accountusername'] && $password ==  $row['accountpassword'] && $email == $row['accountemail'])
+      {
+        header("Location: login.php?username={$username}");
+      }else{
+        echo '
+          <script>
+            alert("WRONG! Wanna try again?");
+          </script>
+        ';
+      }
+    }
+  }
+?>
 
 
 ?>
