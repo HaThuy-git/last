@@ -1,41 +1,30 @@
 <?php
- 
-session_start(); 
-$user = $_GET['user'];
-$password = $_GET['password'];
-$email = $_GET['email'];
+    include 'connect.php';
+    $sql = "SELECT * FROM account";
+    $result = pg_query($connection,$sql);
+    if (pg_num_rows($result) > 0) {
+    // output data of each row
+    while($row = pg_fetch_assoc($result)) {
 
-if((!$user) || (!$password) || (!$email)){
-echo "Por favor, todos campos devem ser preenchidos! <br /><br />";
-include "index.html";
+    ?>
+    <div action="processlogin.php">
+        <tr>
+            <td>
+                <span><?php echo $row["username"]?></span>
+            </td>
 
-}
-else{
+            <td>
+                <span><?php echo $row["email"]?></span>
+            </td>
 
-    $password = md5($password);
-    $sql = pg_query(
+             <td>
+                <span><?php echo $row["password"]?></span>
+            </td>
+            
+        <tr/>
 
-        "SELECT * FROM account WHERE email_pessoa = '{$user}' AND senha_pessoa = '{$password}' AND status_pessoa='A' ";
-    );
-    $login_check = pg_num_rows($sql);
-if($login_check > 0){
-
-while($row = pg_fetch_array($sql)){
-    foreach ($row as $key => $val){
-     $$key = stripslashes( $val );
-  }
-            $_SESSION['username'] = $username;
-            $_SESSION['password'] = $password;
-            $_SESSION['email'] = $email;
-           header("location: login.php");
-        }
-    }
-else{
-        echo "login successfull";
-
-        include "index.html";
-    }
-
-}
-
+    </div>  
+    <?php }} 
 ?>
+
+ 
