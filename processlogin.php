@@ -1,4 +1,6 @@
 <?php 
+
+
 require_once './connect.php';  
 if(isset($_POST["username"]) && isset($_POST["password"]))
 {
@@ -10,16 +12,16 @@ if(isset($_POST["username"]) && isset($_POST["password"]))
     { ?>
         <script>
             alert("Congratulations Login Successfully!!");
+            window.location.href = "/index.php";
         </script>
     <?php
     } 
     else 
     { 
-         window.location.href = "/index.php";
+
     ?>
         <script>
             alert(" Username Or Password Is Wrong");
-            window.location.href = "/index.php";
         </script>
         <?php }
 }
