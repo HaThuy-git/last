@@ -5,10 +5,6 @@
     if (pg_num_rows($result) > 0) {
     // output data of each row
     while($row = pg_fetch_assoc($result)) {
-
-    ?>
- include 'index.php' 
-    <?php }} 
 ?>
 
  
