@@ -1,12 +1,11 @@
 <?php 
 
-
 require_once './connect.php';  
 if(isset($_POST["username"]) && isset($_POST["password"]))
 {
     $user = $_POST["username"];
     $pass = $_POST["password"];
-    $sql = "SELECT * FROM account WHERE username = '$username' AND pwd= '$password'";
+    $sql = "SELECT * FROM account WHERE username = '$username' AND password= '$password'";
   
     $result = pg_query($connection,$sql);
     if(pg_num_rows($result)==1) 
@@ -27,4 +26,6 @@ if(isset($_POST["username"]) && isset($_POST["password"]))
         <?php }
 }
 ?>
+
+
 
