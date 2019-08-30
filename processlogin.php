@@ -21,7 +21,7 @@ require_once './connect.php';
 $sql = "select * from account where username ='" .$user 
 . "' and password='" . $pass . "'";
 
-$rows = query($sql);
+$rows = pg_query($sql);
 
 if(count($rows)>0)
 header("Location: ./index.php");
