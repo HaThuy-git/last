@@ -24,7 +24,7 @@ $sql = "select * from account where username ='" .$user
 $rows = pg_query($sql);
 
 if(count($rows)>0)
-header("Location: ./index.php");
+header("Location: ./admin.php");
 else
     echo "<h1>Username or Password incorrect</h1>";
 }
