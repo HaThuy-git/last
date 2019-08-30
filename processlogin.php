@@ -12,15 +12,7 @@ if(isset($_POST["username"]) && isset($_POST["password"]))
     { 
         header("Location: ./index.php");
     } 
-    else 
-    { 
-
-    ?>
-        <script>
-            alert(" Username Or Password Is Wrong");
-        </script>
-        <?php }
-}
+else echo "log in fail";
 ?>
 
 
