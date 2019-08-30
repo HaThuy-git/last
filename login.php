@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login</title>
+	<title>login</title>
 </head>
 <body>
-<h1 align="center"></h1>
+<h1 align="center"> Login </h1>
 <a align="center">
 	<form action="processlogin.php" method="Post"> 
-	User name: <input type="text" name="username"> <br> <br>
-	
-	Password: <input type="password" name="password"><br> <br>
-	<input type="Submit" value="Login">
-	<input type="Reset" value="Reset">
+	User name: <input type="text" name="user"> <br> <br>
+	Password: <input type="password" name="pass"><br> <br>
+	<input type="Submit" valua="Login">
+	<input type="Reset" valua="Reset">
     </form>
 </a>
 </body>
