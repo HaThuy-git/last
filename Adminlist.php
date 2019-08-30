@@ -15,15 +15,15 @@
             </td>
 
             <td>
-                <span><?php echo $row["username"]?></span>
+                <span><?php echo $row["productname"]?></span>
             </td>
 
             <td>
-                <span><?php echo $row["password"]?></span>
+                <span><?php echo $row["detailproduct"]?></span>
             </td>
 
              <td>
-                <span><?php echo $row["email"]?></span>
+                <span><?php echo $row["image"]?></span>
             </td>
             <td>
                 <a href="https://babyhop.herokuapp.com/add_user.php">Add</a> | <a href="">Delete</a>
