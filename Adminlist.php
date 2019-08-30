@@ -26,7 +26,7 @@
                 <span><?php echo $row["detailproduct"]?></span>
             </td>
             <td>
-                <span><?php echo $row["image"]?></span>
+                <img src="<?php echo $row["image"] ?>">
             </td>
             <td>
                 <a href="https://babyhop.herokuapp.com/add_user.php">Add</a> | <a href="">Delete</a>
