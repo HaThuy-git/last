@@ -19,10 +19,13 @@
             </td>
 
             <td>
-                <span><?php echo $row["detailproduct"]?></span>
+                <span><?php echo $row["price"]?></span>
             </td>
 
              <td>
+                <span><?php echo $row["detailproduct"]?></span>
+            </td>
+            <td>
                 <span><?php echo $row["image"]?></span>
             </td>
             <td>
