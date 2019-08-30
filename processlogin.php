@@ -5,7 +5,7 @@ if(isset($_POST["username"]) && isset($_POST["password"]))
 {
     $user = $_POST["username"];
     $pass = $_POST["password"];
-    $sql = "SELECT * FROM account WHERE username = '$username' AND password= '$password'";
+    $sql = "SELECT * FROM account WHERE username = '$user' AND password= '$pass'";
   
     $result = pg_query($connection,$sql);
     if(pg_num_rows($result)==1) 
