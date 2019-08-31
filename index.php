@@ -146,7 +146,7 @@
 				<a href="https://www.facebook.com/babyhopvn" target="_bank">
 					<img src="anh/face.png" alt="https://www.facebook.com/babyhopvn"
 					height="50" width="50">
-				</a>	
+				</a>	<br> <br>
 				<a href="https://shopee.vn/babyhopstore" target="_bank"> <img src="anh/shoppe.jpg" alt="https://shopee.vn/babyhopstore" height="55" width="55"></a>
 			</ul>
 </div>
