@@ -27,7 +27,7 @@ if(count($rows)>0) {
 	echo "<h1> Login Successfully </h1>";
 }
 
-if ($user == 'Thuy' && $pass == '123') {
+if ($username == 'Thuy' && $password == '123') {
 	header("Location: ./admin.php")
 }
 else
