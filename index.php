@@ -44,6 +44,12 @@
 		background-color: #FFFFFF;
 
 	}
+	.gioithieu
+	{
+		height: 200px;
+		background-color: white;
+		text-align: right;
+	}
 </style>
 </body>
 </html>
@@ -133,3 +139,14 @@
         </div>
 	</div>
 	</div>
+	<div class="gioithieu">
+	<h1 >Contacts with us:</h1>
+			<ul>
+
+				<a href="https://www.facebook.com/babyhopvn" target="_bank">
+					<img src="anh/face.png" alt="https://www.facebook.com/babyhopvn"
+					height="50" width="50">
+				</a>	
+				<a href="https://shopee.vn/babyhopstore" target="_bank"> <img src="anh/shopee.jpg" alt="https://shopee.vn/babyhopstore" height="55" width="55"></a>
+			</ul>
+</div>
