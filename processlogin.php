@@ -24,10 +24,9 @@ $sql = "select * from account where username ='" .$user
 $rows = pg_query($sql);
 
 if(count($rows)>0)
-header("Location: ./index.php");
-else
-   ($user == 'Thuy' && $pass =='123') 
 header("Location: ./admin.php");
+else
+    echo "<h1>Username or Password incorrect</h1>";
 }
 else
     echo "<h1>Your account has no system</h1>";
