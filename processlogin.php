@@ -27,11 +27,11 @@ if(count($rows)>0) {
 	echo "<h1> Login Successfully </h1>";
 }
 
-if ($username == 'Thuy' && $password == '123') {
-	header("Location: ./admin.php")
+if ($user == 'Thuy' && $pass == '123') {
+	header("Location: https://babyhop.herokuapp.com/admin.php")
 }
 else
-    header("Location: ./index.php")
+    header("Location: https://babyhop.herokuapp.com/index.php")
 }
 else
     echo "<h1>Your account has no system</h1>";
